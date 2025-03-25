@@ -1,3 +1,5 @@
+
+
 /* cursors */
 
 body {
@@ -21,9 +23,10 @@ button,
   text-align: right;
 }
 
-.nav-menu,
-.nav-link {
-  background-color: var(--light-turquoise);
+/* about */
+
+.next-chapter {
+  margin-top: 20px !important;
 }
 
 /* focus */
@@ -44,6 +47,11 @@ button,
 .focus-list {
   text-align: left;
   color: var(--white);
+  padding-bottom: 40px;
+}
+
+.aoc-logo {
+  max-width: 300px;
 }
 
 /* accomplishments */
@@ -57,8 +65,46 @@ button,
 /* media queries */
 
 @media (max-width: 767px) {
-  body {
+  .navigation-bar {
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+
+  .nav-menu,
+  .nav-link {
+    background-color: var(--light-turquoise) !important;
+  }
+
+  .navigation-link:hover {
+    color: var(--turquoise);
+  }
+
+  .focus-items {
     margin-left: 20px;
     margin-right: 20px;
+  }
+}
+
+@media (max-width: 259px) {
+  .brand-text {
+    display: none;
+  }
+
+  .navigation-bar {
+    padding-right: 0;
+  }
+
+  .icon-nav-menu {
+    height: 10px;
+    width: 12px;
+  }
+
+  .nav-button {
+    padding: 10px 0 0 10px;
+  }
+
+  #accomplishments h2,
+  #accomplishments .section-subheading {
+    font-size: 90%;
   }
 }

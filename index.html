@@ -20,7 +20,7 @@
     </script>
   </head>
   <body>
-    <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation-bar nav">
+    <div data-collapse="small" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation-bar nav">
       <div class="container">
         <div href="/" aria-current="page" class="brand-link nav-brand -current"><h1 class="brand-text">&lt; POLAR &gt;</h1></div>
         <nav role="navigation" class="navigation-menu nav-menu">
@@ -35,7 +35,9 @@
       </div>
     </div>
     <div class="hero-section centered">
-      <img src="./src/assets/polar/polar-ice-banner.jpeg" loading="lazy" width="Auto" sizes="(max-width: 1200px) 100vw, 1200px" alt="" srcset="./src/assets/polar/polar-ice-banner.jpeg 800w" class="image-3"/>
+      <video autoplay muted playsinline onloadedmetadata="this.currentTime = 0.1;" onplay="this.playbackRate = 0.5;" ontimeupdate="if (this.currentTime >= this.duration * 0.6) { this.pause(); this.ontimeupdate = null; }" class="image-3">
+        <source src="./src/assets/polar/polar-ice-banner.mp4" type="video/mp4">
+      </video>
       <div data-id="e464d218-f801-55d1-1f50-7da00b5bfb8f" style="opacity:0" class="container">
         <div data-ix="fade-in-bottom-page-loads" class="hero-subheading">The Battlefield Awaits. Answer the Call.</div>
         <div data-ix="fade-in-bottom-page-loads">
@@ -54,10 +56,10 @@
           <div class="tab-content">
             <div data-tab="Tab 3" class="tab-pane -tab-active">
               <div>
-                <div style="padding-top:56.17021276595745%" class="video video embed">
-                  <iframe width="940" height="528" src="https://www.youtube.com/embed/4A6xi_VtwjU" title="POLAR - Ashes of Creation" frameborder="0" allowfullscreen></iframe>
+                <div style="padding-top:56.17021276595745%" class="video embed">
+                  <iframe class="youtube-video" width="940" height="528" src="https://www.youtube.com/embed/4A6xi_VtwjU" title="POLAR - Ashes of Creation" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <h2 class="heading">The Next Chapter: Ashes of Creation</h2>
+                <h2 class="heading next-chapter">The Next Chapter: Ashes of Creation</h2>
                 <h3 class="heading">2021 - Present</h3>
                 <p class="paragraph">Excel in your chosen path, adapt to challenges, and strive for continuous improvement. Individual stars shine brighter when united. Commit to our collective goals and conquer as one. Relentless determination and a hunger for high-level progression drive us forward.</p>
               </div>
@@ -71,7 +73,7 @@
     <div class="container">
       <div class="section-title-group">
         <h2 class="section-heading centered">Core Focus</h2>
-        <div class="section-subheading center">thrive in both chaos and order</div>
+        <div class="section-subheading center">thriving in both chaos and order</div>
       </div>
       <div class="focus-list">
         <p class="focus-items"><b>PVP Excellence:</b> From small skirmishes to epic large-scale battles, we dominate with precision and power, proving that skill beats numbers every time.</p>
@@ -80,7 +82,7 @@
         <p class="focus-items"><b>Territory Control & Node Progression:</b> From strategic nodes to contested territories, POLAR claims, builds, and defends a legacy that lasts.</p>
       </div>
       <div class="transparent">
-        <img src="src/assets/game-logos/aoc-logo.png" sizes="(max-width: 767px) 96vw, (max-width: 991px) 46vw, 460.0000305175781px" height="Auto" srcset="src/assets/game-logos/aoc-logo.png 512w" alt=""/>
+        <img src="src/assets/game-logos/aoc-logo.png" class="aoc-logo" sizes="(max-width: 767px) 96vw, (max-width: 991px) 46vw, 460.0000305175781px" height="Auto" srcset="src/assets/game-logos/aoc-logo.png 512w" alt="AOC logo"/>
       </div>
     </div>
     </div>
