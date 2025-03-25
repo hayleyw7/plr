@@ -19,6 +19,7 @@
 
 .wow-logo {
   max-width: 200px;
+  margin-top: 12px;
 }
 
 /* cursors */
@@ -60,6 +61,17 @@ button,
   background-color: var(--turquoise);
 }
 
+.hero-button-container {
+  opacity:0;
+  animation: fadeIn 4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
 /* about */
 
 #about .next-chapter {
@@ -89,6 +101,18 @@ button,
 
 /* accomplishments */
 
+.wow-logo.cata {
+  margin-bottom: 15px;
+}
+
+.wow-logo.wotlk {
+  margin-bottom: 5px !important;
+}
+
+/* .wow-logo.som-sod {
+  margin-bottom: 100px !important;
+} */
+
 #accomplishments p.paragraph-2,
 #accomplishments p.paragraph-3,
 #accomplishments p.paragraph-4 {
@@ -96,6 +120,15 @@ button,
 }
 
 /* media queries */
+
+@media (max-width: 991px) {
+  #accomplishments p.paragraph-2,
+  #accomplishments p.paragraph-3,
+  #accomplishments p.paragraph-4 {
+    color: var(--dark-gray);
+    font-size: 11px;
+  }
+}
 
 @media (max-width: 767px) {
   .hero-subheading,
@@ -136,6 +169,12 @@ button,
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 20px;
+  }
+
+  #accomplishments p.paragraph-2,
+  #accomplishments p.paragraph-3,
+  #accomplishments p.paragraph-4 {
+    font-size: 14px;
   }
 }
 
