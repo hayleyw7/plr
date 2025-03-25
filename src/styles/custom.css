@@ -1,0 +1,64 @@
+/* cursors */
+
+body {
+  cursor: default;
+}
+
+a,
+button,
+.dropdown-toggle,
+.nav-button,
+.nav-link {
+  cursor: pointer;
+}
+
+/* nav */
+
+.navigation-bar,
+.nav-link,
+.brand-link {
+  background-color: var(--turquoise);
+  text-align: right;
+}
+
+.nav-menu,
+.nav-link {
+  background-color: var(--light-turquoise);
+}
+
+/* focus */
+
+#focus {
+  background-color: var(--dark-gray);
+}
+
+.section-title-group {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#focus h2 {
+  color: var(--white);
+}
+
+.focus-list {
+  text-align: left;
+  color: var(--white);
+}
+
+/* accomplishments */
+
+#accomplishments p.paragraph-2,
+#accomplishments p.paragraph-3,
+#accomplishments p.paragraph-4 {
+  color: var(--dark-gray);
+}
+
+/* media queries */
+
+@media (max-width: 767px) {
+  body {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
