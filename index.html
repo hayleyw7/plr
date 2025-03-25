@@ -20,33 +20,36 @@
     </script>
   </head>
   <body>
-    <div data-collapse="small" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation-bar nav">
-      <div class="container">
-        <div href="/" aria-current="page" class="brand-link nav-brand -current"><h1 class="brand-text">&lt; POLAR &gt;</h1></div>
-        <nav role="navigation" class="navigation-menu nav-menu">
-          <a href="https://discord.com/invite/polarguild" class="navigation-link nav-link">Join<br/></a>
-          <a href="#about" class="navigation-link nav-link">About</a>
-          <a href="#focus" class="navigation-link nav-link">Focus</a>
-          <a href="#accomplishments" class="navigation-link nav-link">Accomplishments</a>
-        </nav>
-        <div class="hamburger-button nav-button">
-          <div class="icon icon-nav-menu"><div></div></div>
+    <div class="full-height">
+      <div data-collapse="small" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation-bar nav">
+        <div class="container">
+          <div href="/" aria-current="page" class="brand-link nav-brand -current"><h1 class="brand-text">&lt; POLAR &gt;</h1></div>
+          <nav role="navigation" class="navigation-menu nav-menu">
+            <a href="https://discord.com/invite/polarguild" class="navigation-link nav-link" target="_blank">Join<br/></a>
+            <a href="#about" class="navigation-link nav-link">About</a>
+            <a href="#focus" class="navigation-link nav-link">Focus</a>
+            <a href="#accomplishments" class="navigation-link nav-link">Accomplishments</a>
+          </nav>
+          <div class="hamburger-button nav-button">
+            <div class="icon icon-nav-menu"><div></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-section centered" id="join">
+        <video autoplay muted playsinline onloadedmetadata="this.currentTime = 0.1;" onplay="this.playbackRate = 0.5;" ontimeupdate="if (this.currentTime >= this.duration * 0.6) { this.pause(); this.ontimeupdate = null; }" class="banner-video">
+          <source src="./src/assets/polar/polar-ice-banner.mp4" type="video/mp4">
+          <track kind="captions" srclang="en" label="English captions" default src="">
+        </video>
+        <div data-id="e464d218-f801-55d1-1f50-7da00b5bfb8f" style="opacity:0" class="container">
+          <div data-ix="fade-in-bottom-page-loads" class="hero-subheading">The Battlefield Awaits. Answer the Call.</div>
+          <div data-ix="fade-in-bottom-page-loads">
+            <a href="https://discord.com/invite/polarguild" class="hollow-button all-caps" target="_blank">discord</a>
+            <a href="https://www.twitch.tv/team/polar" class="hollow-button all-caps" target="_blank">twitch</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="hero-section centered">
-      <video autoplay muted playsinline onloadedmetadata="this.currentTime = 0.1;" onplay="this.playbackRate = 0.5;" ontimeupdate="if (this.currentTime >= this.duration * 0.6) { this.pause(); this.ontimeupdate = null; }" class="banner-video">
-        <source src="./src/assets/polar/polar-ice-banner.mp4" type="video/mp4">
-        <track kind="captions" srclang="en" label="English captions" default src="">
-      </video>
-      <div data-id="e464d218-f801-55d1-1f50-7da00b5bfb8f" style="opacity:0" class="container">
-        <div data-ix="fade-in-bottom-page-loads" class="hero-subheading">The Battlefield Awaits. Answer the Call.</div>
-        <div data-ix="fade-in-bottom-page-loads">
-          <a href="https://discord.com/invite/polarguild" class="hollobutton all-caps">discord</a>
-          <a href="https://www.twitch.tv/team/polar" class="hollobutton all-caps">twitch</a>
-        </div>
-      </div>
-    </div>
+
     <div id="about" class="section">
       <div class="container">
         <div class="section-title-group">
@@ -70,7 +73,7 @@
       </div>
     </div>
   </div>
-  <div id="focus" class="section">
+  <div id="focus" class="section full-height">
     <div class="container">
       <div class="section-title-group">
         <h2 class="section-heading centered">Core Focus</h2>
@@ -87,7 +90,7 @@
       </div>
     </div>
     </div>
-    <div id="accomplishments" class="section">
+    <div id="accomplishments" class="section full-height">
       <div class="container">
         <div class="section-title-group">
           <h2 class="section-heading centered">Accomplishments</h2>

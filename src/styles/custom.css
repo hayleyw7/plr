@@ -1,3 +1,12 @@
+/* general */
+
+.full-height {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* images */
 
 .aoc-logo {
@@ -44,7 +53,7 @@ button,
 /* about */
 
 #about .next-chapter {
-  margin-top: 20px !important;
+  margin-top: 30px !important;
 }
 
 /* focus */

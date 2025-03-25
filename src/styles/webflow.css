@@ -1269,7 +1269,7 @@ p {
 
 /* hollow buttons */
 
-.hollobutton {
+.hollow-button {
   color: var(--white);
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -1286,12 +1286,12 @@ p {
   background-color: transparent;
 }
 
-.hollobutton:hover {
+.hollow-button:hover {
   color: var(--blue);
   border-color: var(--blue);
 }
 
-.hollobutton.all-caps {
+.hollow-button.all-caps {
   text-transform: uppercase;
 }
 
@@ -1606,7 +1606,7 @@ p {
     font-size: 16px;
   }
 
-  .hollobutton.all-caps {
+  .hollow-button.all-caps {
     margin-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
