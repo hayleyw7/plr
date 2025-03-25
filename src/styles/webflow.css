@@ -3,11 +3,16 @@
 :root {
   --black: #000;
   --white: #fcfeff;
-  --dark-gray: #676770;
-  --gray: #c9caca;
-  --light-gray: #e6e6e6;
+  /* --dark-gray: #676770; */
+  /* --dark-gray: #444443; */
+  /* --dark-gray: #3c3c3c; */
+  /* --dark-gray: #5a6062; */
+  --dark-gray: #595f6d;
+  --gray: #b2b6bc;
+  --light-gray: #dbe1e5;
   --turquoise: #57c5eb;
   --light-turquoise: #a9dff3;
+  --blue: #1e3374;
 }
 
 @font-face {
@@ -1140,14 +1145,6 @@ p {
 
 /* buttons */
 
-.button:hover {
-  background-color: var(--turquoise);
-}
-
-.button.-current {
-  background-color: var(--turquoise);
-}
-
 .button.full-width {
   width: 100%;
   margin-left: 0;
@@ -1179,10 +1176,6 @@ p {
 .navigation-link.-current {
   color: var(--white);
   -webkit-text-stroke-color: white;
-}
-
-.navigation-bar {
-  background-color: var(--turquoise);
 }
 
 /* brand */
@@ -1246,7 +1239,7 @@ p {
 .hero-section.centered {
   color: var(--dark-gray);
   text-align: center;
-  background-color: var(--dark-gray);
+  background-color: var(--turquoise);
   padding-top: 0;
   padding-bottom: 50px;
 }
@@ -1262,7 +1255,7 @@ p {
 }
 
 .hero-subheading {
-  color: var(--light-turquoise);
+  color: var(--white);
   letter-spacing: 3px;
   -webkit-text-stroke-color: var(--turquoise);
   text-transform: uppercase;
@@ -1294,8 +1287,8 @@ p {
 }
 
 .hollobutton:hover {
-  color: var(--light-turquoise);
-  border-color: var(--light-turquoise);
+  color: var(--blue);
+  border-color: var(--blue);
 }
 
 .hollobutton.all-caps {
@@ -1357,7 +1350,6 @@ p {
 /* footer */
 
 .footer {
-  background-color: var(--turquoise);
   padding-top: 35px;
   padding-bottom: 35px;
 }
@@ -1454,7 +1446,7 @@ p {
   margin-bottom: 11px;
 }
 
-.image-3 {
+.banner-video {
   width: 100%;
   min-height: auto;
   padding-bottom: 50px;
@@ -1569,7 +1561,7 @@ p {
     max-width: 75%;
   }
 
-  .image-3 {
+  .banner-video {
     padding-bottom: 35px;
   }
 
@@ -1637,7 +1629,7 @@ p {
     width: 35%;
   }
 
-  .image-3 {
+  .banner-video {
     padding-bottom: 40px;
   }
 
