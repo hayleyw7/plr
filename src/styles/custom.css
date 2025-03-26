@@ -101,10 +101,10 @@ html, body {
 }
 
 #accomplishments h2 {
-  color: var(--light-gray) !important;
+  color: var(--white) !important;
   font-weight: 700;
   font-size: 300%;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 #accomplishments h3 {
@@ -115,6 +115,7 @@ html, body {
 
 .aoc-logo {
   max-width: 300px;
+  margin-bottom: 30px;
 }
 
 .wow-logo {
@@ -186,6 +187,7 @@ button,
 #about .section-heading,
 #about .next-chapter {
   color: var(--white) !important;
+  opacity: 0.9;
 }
 
 #about .section-subheading,
@@ -272,11 +274,10 @@ button,
   .nav-menu,
   .nav-link {
     background-color: transparent;
-    opacity: 0.9;
-  }
-
-  .navigation-link {
+    opacity: 0.95;
     color: var(--white);
+    background-color: var(--dark-gray) !important;
+    font-weight: bold;
   }
 
   .navigation-link:hover {
@@ -305,6 +306,8 @@ button,
 
   #accomplishments h2 {
     font-size: 200%;
+    margin-top: 30px;
+    margin-bottom: 50px;
   }
 
   #accomplishments p.paragraph-2,
@@ -362,12 +365,13 @@ button,
   }
 
   #about .section-title-group {
-    margin-bottom: 25px;
+    margin-top: -30px;
+    margin-bottom: 30px;
   }
 
   #about .section-heading,
   #focus .section-heading{
-    font-size: 200% !important;
+    font-size: 150% !important;
   }
 
   #focus .section-subheading {
