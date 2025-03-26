@@ -173,7 +173,6 @@ button,
 
 .hero-subheading {
   font-weight: bold;
-  padding-top: 30px;
 }
 
 /* about */
@@ -244,6 +243,20 @@ button,
   #accomplishments p.paragraph-4 {
     color: var(--dark-gray);
   }
+
+  #about,
+  #focus {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #about .section-title-group{
+    margin-bottom: 20px;
+  }
+
+  .aoc-logo {
+    max-width: 200px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -279,14 +292,6 @@ button,
     color: var(--white) !important;
   }
 
-  .banner-video {
-    width: 175vw;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 20px;
-  }
-
   .heading.next-chapter span:first-child::after,
   .hero-subheading span:first-child::after {
     content: "";
@@ -303,6 +308,17 @@ button,
     font-size: 200%;
     margin-top: 30px;
     margin-bottom: 50px;
+  }
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+  .white-box {
+    max-width: 400px;
   }
 
   #accomplishments p.paragraph-2,
@@ -341,7 +357,7 @@ button,
   }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 483px) {
   body {
     overflow-x: hidden;
   }
@@ -353,6 +369,14 @@ button,
     margin-left: -50vw;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .banner-video {
+    width: 175vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
   }
 
   #about {
@@ -396,5 +420,27 @@ button,
 
   .wow-logo {
     max-width: 70vw !important;
+  }
+}
+
+/* discord and twitch links */
+
+.nav-menu .navigation-link[href*="discord"],
+.nav-menu .navigation-link[href*="twitch"] {
+  display: inline-block;
+}
+
+.hero-button-container .hollow-button[href*="discord"] {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .nav-menu .navigation-link[href*="discord"],
+  .nav-menu .navigation-link[href*="twitch"] {
+    display: none;
+  }
+  
+  .hero-button-container .hollow-button[href*="discord"] {
+    display: inline-block;
   }
 }
