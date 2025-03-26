@@ -1,7 +1,11 @@
 /* general */
 
+html, body {
+  overflow-x: hidden;
+}
+
 .full-height {
-  min-height: 100vh;
+  min-height: 100vh !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,6 +13,52 @@
 
 .top-section {
   justify-content: flex-start;
+}
+
+/* backgrounds */
+
+.navigation-bar,
+.hero-section {
+  background: transparent !important;
+}
+
+#focus,
+.top-section.full-height,
+.footer {
+  background-image: url('/src/assets/backgrounds/bg-navy-frosty.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#focus,
+.top-section.full-height {
+  min-height: 100vh;
+}
+
+#about {
+  background-image: url('/src/assets/backgrounds/bg-ice.png') !important;
+  background-size: 250% !important;
+  background-position: center bottom !important;
+  background-repeat: no-repeat !important;
+}
+
+#accomplishments {
+  background-image: url('/src/assets/backgrounds/bg-fantasy.png') !important;
+  background-size: 250% !important;
+  background-position: center bottom !important;
+  background-repeat: no-repeat !important;
+}
+
+.white-box {
+  opacity: 0.9;
+}
+
+#accomplishments h2 {
+  color: var(--light-gray) !important;
+  font-weight: 700;
+  font-size: 300%;
+  opacity: 0.9;
 }
 
 /* images */
@@ -44,21 +94,21 @@ button,
 .navigation-menu,
 .nav-link,
 .brand-link {
-  background-color: var(--turquoise);
+  background-color: transparent;
   text-align: right;
 }
 
 /* headings */
 
-#about h2,
-#accomplishments h2 {
+#about h2 {
   color: var(--blue) !important;
+  font-weight: bold;
 }
 
 /* top section */
 
 .top-section {
-  background-color: var(--turquoise);
+  background-color: transparent;
 }
 
 .hero-button-container {
@@ -87,6 +137,10 @@ button,
 #focus .section-title-group {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+#focus .section-subheading {
+  color: var(--light-gray) !important;
 }
 
 #focus h2 {
@@ -126,7 +180,6 @@ button,
   #accomplishments p.paragraph-3,
   #accomplishments p.paragraph-4 {
     color: var(--dark-gray);
-    font-size: 11px;
   }
 }
 
@@ -147,16 +200,17 @@ button,
   }
 
   .nav-button {
-    background-color: var(--turquoise) !important;
+    background-color: transparent;
   }
 
   .nav-menu,
   .nav-link {
-    background-color: var(--light-turquoise) !important;
+    background-color: transparent;
+    opacity: 0.9;
   }
 
   .navigation-link {
-    color: var(--black) !important;
+    color: var(--white);
   }
 
   .navigation-link:hover {
@@ -171,23 +225,35 @@ button,
     margin-bottom: 20px;
   }
 
+  .heading.next-chapter span:first-child::after {
+    content: "";
+    display: block;
+  }
+
+  #accomplishments {
+    background: #0d0f1a url('/src/assets/backgrounds/bg-fantasy.png') no-repeat center top !important;
+    background-size: cover !important;
+    min-height: 150vh;
+    width: 100%;
+  }
+
+  #about {
+    background: #0d0f1a url('/src/assets/backgrounds/bg-ice.png') no-repeat center top !important;
+    background-size: cover !important;
+    min-height: 150vh;
+    width: 101%;
+  }
+
+  #accomplishments h2 {
+    font-size: 200%;
+  }
+
   #accomplishments p.paragraph-2,
   #accomplishments p.paragraph-3,
   #accomplishments p.paragraph-4 {
     font-size: 14px;
   }
 }
-
-/* @media (max-width: 479px) {
-.banner-video {
-  width: 175vw;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 20px;
-}
-
-} */
 
 @media (max-width: 259px) {
   .aoc-logo,
@@ -215,5 +281,62 @@ button,
   #accomplishments h2,
   #accomplishments .section-subheading {
     font-size: 90%;
+  }
+}
+
+@media (max-width: 479px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .section {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #about {
+    padding-top: -500px !important;
+  }
+
+  #about .section-title-group {
+    margin-bottom: 25px;
+  }
+
+  #about .section-heading,
+  #focus .section-heading{
+    font-size: 200% !important;
+  }
+
+  #focus .section-subheading {
+    font-size: 90%;
+  }
+
+  #accomplishments h2 {
+    font-size: 150%;
+  }
+
+  #accomplishments .section-title-group {
+    margin-bottom: 20px;
+  }
+
+  .col-4 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 200px; /* adjust as needed */
+  }
+
+  .white-box {
+    max-width: 80vw;
+  }
+
+  .wow-logo {
+    max-width: 70vw !important;
   }
 }
