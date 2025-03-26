@@ -88,7 +88,7 @@ html, body {
 
 #about::before {
   background-color: var(--dark-gray);
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 #accomplishments::before {

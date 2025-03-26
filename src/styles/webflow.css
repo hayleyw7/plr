@@ -34,7 +34,6 @@ html {
 body {
   margin: 0;
   color: var(--dark-gray);
-  background-color: var(--white);
   min-height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
@@ -802,7 +801,6 @@ button, [type="button"], [type="reset"] {
 
 .nav {
   z-index: 1000;
-  background: var(--gray);
   position: relative;
 }
 
@@ -818,14 +816,12 @@ button, [type="button"], [type="reset"] {
 
 .nav-brand {
   float: left;
-  color: var(--dark-gray);
   text-decoration: none;
   position: relative;
 }
 
 .nav-link {
   vertical-align: top;
-  color: var(--dark-gray);
   text-align: left;
   margin-left: auto;
   margin-right: auto;
@@ -846,7 +842,6 @@ button, [type="button"], [type="reset"] {
 
 [data-nav-menu-open] {
   text-align: center;
-  background: var(--gray);
   min-width: 200px;
   position: absolute;
   top: 100%;
@@ -913,7 +908,6 @@ button, [type="button"], [type="reset"] {
 
 .nav-button.-open {
   color: var(--white);
-  background-color: var(--gray);
 }
 
 .nav[data-collapse="all"] .nav-menu {
@@ -977,8 +971,7 @@ button, [type="button"], [type="reset"] {
 .tab-link {
   vertical-align: top;
   text-align: left;
-  color: var(--dark-gray);
-  background-color: var(--gray);
+  background-color: var(--blue);
   padding: 9px 30px;
   text-decoration: none;
   display: inline-block;
