@@ -1198,7 +1198,7 @@ p {
   text-align: center;
   background-color: var(--light-gray);
   border: 1px solid var(--light-gray);
-  border-radius: 5px;
+  border-radius: 10px;
   height: 380px;
   padding: 15px;
 }
@@ -1394,10 +1394,6 @@ p {
   display: flex;
 }
 
-.paragraph {
-  color: var(--dark-gray);
-}
-
 /* headings */
 
 .heading {
@@ -1407,10 +1403,6 @@ p {
 
 .heading-2 {
   color: var(--dark-gray);
-}
-
-.paragraph-2, .paragraph-3, .paragraph-4 {
-  color: var(--turquoise);
 }
 
 /* images */
