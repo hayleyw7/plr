@@ -3,7 +3,7 @@
 :root {
   --black: #000;
   --white: #fcfeff;
-  /* --dark-gray: #676770; */
+  /* --dark-gray: #680070; */
   /* --dark-gray: #444443; */
   /* --dark-gray: #3c3c3c; */
   /* --dark-gray: #5a6062; */
@@ -32,7 +32,7 @@ html {
 
 body {
   font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
 }
 
@@ -183,7 +183,7 @@ h4 {
 
 h5 {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
 }
 
@@ -540,7 +540,7 @@ button, [type="button"], [type="reset"] {
 
 /* tablet - small */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .hidden-main, .hidden-medium {
     display: inherit !important;
   }
@@ -786,7 +786,7 @@ button, [type="button"], [type="reset"] {
 
 /* tablet - small */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .nav-brand {
     padding-left: 10px;
   }
@@ -919,7 +919,7 @@ button, [type="button"], [type="reset"] {
 
 /* tablet - small */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .nav[data-collapse="small"] .nav-menu {
     display: none;
   }
@@ -1099,7 +1099,7 @@ h6 {
 p {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 25px;
 }
@@ -1462,7 +1462,7 @@ p {
 
 /* tablet - small */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .button.full-width {
     margin-left: auto;
     margin-right: auto;
