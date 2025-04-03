@@ -38,6 +38,7 @@ body {
   background-position: top center !important;
   background-repeat: no-repeat;
   z-index: -1;
+  background-attachment: fixed !important;
 }
 
 #focus::after,
@@ -65,6 +66,7 @@ body {
   background: url('/src/assets/backgrounds/bg-fantasy.png') no-repeat center bottom !important;
   background-size: 250% !important;
   z-index: 0;
+  background-attachment: fixed !important;
 }
 
 #about::before,
@@ -109,6 +111,12 @@ body {
 
 #accomplishments h4 {
   padding-top: 15px;
+}
+
+#accomplishments .half-br {
+  display: block;
+  content: '';
+  margin-bottom: 0.75em;
 }
 
 /* image & video */
