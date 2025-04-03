@@ -334,6 +334,14 @@ button,
   }
 }
 
+@media (max-width: 509px) {
+  .hollow-button:first-child {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
 @media (max-width: 483px) {
   .hero-section {
     min-height: 93vh;
