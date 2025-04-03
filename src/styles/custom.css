@@ -87,9 +87,10 @@ body {
 
 .white-box {
   opacity: 0.8;
-  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 35px;
+  height: 500px;
 }
 
 #accomplishments h2,
@@ -106,6 +107,10 @@ body {
   font-weight: bold;
 }
 
+#accomplishments h4 {
+  padding-top: 15px;
+}
+
 /* image & video */
 
 .aoc-logo {
@@ -113,8 +118,8 @@ body {
   margin-bottom: 30px;
 }
 
-.wow-logo {
-  max-width: 200px;
+.game-logo {
+  max-width: 150px;
   margin-top: 12px;
 }
 
@@ -230,35 +235,37 @@ button,
 
 /* accomplishments */
 
-.wow-logo.cata {
-  margin-bottom: 15px;
-}
-
-.wow-logo.wotlk {
-  margin-bottom: 5px !important;
-}
-
 #accomplishments {
   padding-top: 60px;
 }
 
-#accomplishments p.paragraph-2,
-#accomplishments p.paragraph-3,
-#accomplishments p.paragraph-4 {
-  color: var(--dark-gray);
+.wow-box {
+  display: flex;
+  justify-content: stretch;
+  gap: 1;
+  margin-bottom: 30px;
+  width: 100% !important;
+}
+
+.wow-box div {
+  flex: 1;
+  min-width: 175px;
+}
+
+#accomplishments .paragraph {
+  color: var(--dark-gray) !important;
 }
 
 /* discord and twitch links */
 
-.nav-menu .navigation-link[href*="discord"],
 .nav-menu .navigation-link[href*="twitch"] {
   display: inline-block;
 }
 
-.hero-button-container .hollow-button[href*="discord"] {
+.hero-button-container .hollow-button[href*="discord"],
+.hero-button-container .hollow-button[href*="about"] {
   display: none;
 }
-
 
 @media (max-width: 991px) {
   #about,
@@ -271,20 +278,18 @@ button,
     max-width: 200px;
   }
 
-  #accomplishments p.paragraph-2,
-  #accomplishments p.paragraph-3,
-  #accomplishments p.paragraph-4 {
+  #accomplishments .paragraph {
     font-size: 90%;
   }
 }
 
 @media (max-width: 800px) {
-  .nav-menu .navigation-link[href*="discord"],
   .nav-menu .navigation-link[href*="twitch"] {
     display: none;
   }
 
-  .hero-button-container .hollow-button[href*="discord"] {
+  .hero-button-container .hollow-button[href*="discord"],
+  .hero-button-container .hollow-button[href*="about"] {
     display: inline-block;
   }
 
@@ -308,9 +313,7 @@ button,
     min-height: 400px;
   }
 
-  #accomplishments p.paragraph-2,
-  #accomplishments p.paragraph-3,
-  #accomplishments p.paragraph-4 {
+  #accomplishments p.paragraph {
     font-size: 100% !important;
   }
 
@@ -325,15 +328,19 @@ button,
     content: "";
     display: block;
   }
+
+  .white-box {
+    max-width: 400px;
+  }
 }
 
 @media (max-width: 483px) {
   .hero-section {
-    min-height: 100vh;
+    min-height: 93vh;
   }
 
-  .banner-image-container {
-    height: 400px;
+  .banner-image {
+    width: 75%;
   }
 
   iframe {
@@ -359,8 +366,21 @@ button,
     margin-right: 15px;
   }
 
+  .hero-subheading span {
+    display: inline-block;
+  }
+
+  .hero-subheading span:first-child {
+    margin-bottom: 20px;
+  }
+
   .white-box {
     max-width: 80vw;
+    height: auto;
+  }
+
+  .wow-box {
+    flex-wrap: wrap;
   }
 
   .p-long {
@@ -375,7 +395,7 @@ button,
 
 @media (max-width: 259px) {
   .aoc-logo,
-  .wow-logo {
+  .game-logo {
     max-width: 150px !important;
   }
 

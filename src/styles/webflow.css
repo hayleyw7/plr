@@ -1179,7 +1179,6 @@ p {
 /* sections */
 
 .section {
-  color: var(--turquoise);
   text-align: center;
   background-color: var(--white);
   padding: 80px 10px;
@@ -1194,12 +1193,10 @@ p {
 /* white box */
 
 .white-box {
-  color: var(--turquoise);
   text-align: center;
   background-color: var(--light-gray);
   border: 1px solid var(--light-gray);
   border-radius: 10px;
-  height: 380px;
   padding: 15px;
 }
 
