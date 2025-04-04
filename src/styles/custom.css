@@ -33,7 +33,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/src/assets/backgrounds/bg-navy-frosty.png');
+  background-image: url('/public/assets/backgrounds/bg-navy-frosty.png');
   background-size: cover;
   background-position: top center !important;
   background-repeat: no-repeat;
@@ -63,7 +63,7 @@ body {
 #about,
 #accomplishments {
   position: relative;
-  background: url('/src/assets/backgrounds/bg-fantasy.png') no-repeat center bottom !important;
+  background: url('/public/assets/backgrounds/bg-fantasy.png') no-repeat center bottom !important;
   background-size: 250% !important;
   z-index: 0;
   background-attachment: fixed !important;
