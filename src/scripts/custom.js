@@ -1,3 +1,9 @@
+// icons
+
+import { createIcons, icons } from 'https://unpkg.com/lucide@latest/dist/esm/lucide.js';
+
+createIcons({ icons });
+
 // navbar links
 
 // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
