@@ -16,7 +16,7 @@ body {
 }
 
 .p-long {
-  text-align: center;
+  text-align: left;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -35,7 +35,7 @@ body {
   position: absolute;
   inset: 0;
   background: url('/assets/backgrounds/bg-navy-frosty-sm.png');
-  background-size: cover;
+  background-size: cover !important;
   background-position: top center !important;
   background-repeat: no-repeat;
   background-attachment: fixed !important;
@@ -62,15 +62,16 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('/assets/backgrounds/bg-fantasy.png') no-repeat center bottom;
-  background-size: 250%;
+  background: url('/assets/backgrounds/bg-fantasy.png') no-repeat center top;
+  background-size: cover;
   background-attachment: fixed;
   opacity: 0.3;
   z-index: -1;
 }
 
 .white-box {
-  opacity: 0.8;
+  background-color: rgba(74, 79, 92, 0.7); 
+  border: 1px solid var(--dark-gray);
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 35px;
@@ -220,10 +221,18 @@ button,
 }
 
 #focus .focus-list {
-  text-align: left;
+  text-align: center;
   color: var(--white);
   padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
 }
+
+#focus .focus-items {
+  text-align: left;
+  display: inline-block;
+}
+
 
 /* accomplishments */
 

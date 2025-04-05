@@ -8,6 +8,7 @@
   /* --dark-gray: #3c3c3c; */
   /* --dark-gray: #5a6062; */
   --dark-gray: #595f6d;
+  /* --dark-gray: #4a4f5c; */
   --gray: #b2b6bc;
   --light-gray: #dbe1e5;
   --turquoise: #57c5eb;
@@ -1190,14 +1191,12 @@ p {
 
 .white-box {
   text-align: center;
-  background-color: var(--dark-gray);
-  border: 1px solid var(--dark-gray);
   border-radius: 10px;
   padding: 15px;
 }
 
 .white-box.transparent {
-  background-color: var(--dark-gra);
+  background-color: var(--dark-gray);
   border-style: none;
 }
 
