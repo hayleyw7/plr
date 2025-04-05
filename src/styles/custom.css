@@ -186,6 +186,7 @@ body {
 }
 
 .aoc-topic {
+  padding-top: 6px;
   padding-bottom: 6px;
   display: inline-block;
 }
