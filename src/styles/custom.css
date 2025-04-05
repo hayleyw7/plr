@@ -65,8 +65,8 @@ body {
 }
 
 .focus-item img {
-  width: 35px !important;
-  height: 35px !important;
+  width: 40px !important;
+  height: 40px !important;
 }
 
 #focus .focus-list {
@@ -151,6 +151,23 @@ body {
 .aoc-box,
 .wow-box {
   font-size: 18px !important;
+  text-align: center;
+}
+
+.aoc-box a,
+.focus-text a {
+  background-color: transparent;
+}
+
+.aoc-box a img {
+  padding-bottom: 2px;
+  height: 22px;
+}
+
+.focus-text a img {
+  padding-bottom: 2px;
+  height: 22px !important;
+  width: 22px !important;
 }
 
 #accomplishments h2,
@@ -186,10 +203,16 @@ body {
   padding-bottom: 5px;
 }
 
-#accomplishments .half-br {
+.half-br {
   display: block;
   content: '';
   margin-bottom: 0.75em;
+}
+
+.quarter-br {
+  display: block;
+  content: '';
+  margin-bottom: .3em;
 }
 
 /* image & video */
