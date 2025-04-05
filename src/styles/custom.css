@@ -78,6 +78,11 @@ body {
   height: 500px;
 }
 
+.aoc-box,
+.wow-box {
+  font-size: 18px;
+}
+
 #accomplishments h2,
 #accomplishments .section-subheading,
 #accomplishments h3,
@@ -188,6 +193,11 @@ button,
   color: var(--light-gray) !important;
 }
 
+#about .section-subheading,
+#focus .section-subheading {
+  font-size: 20px;
+}
+
 #about .p-long {
   margin-top: 30px;
   font-size: 20px;
@@ -231,6 +241,7 @@ button,
 #focus .focus-items {
   text-align: left;
   display: inline-block;
+  font-size: 18px;
 }
 
 
@@ -262,6 +273,12 @@ button,
 .hero-button-container .hollow-button[href*="discord"],
 .hero-button-container .hollow-button[href*="about"] {
   display: none;
+}
+
+/* footer */
+
+.footer-text {
+  font-size: 18px !important;
 }
 
 /* responsive */
