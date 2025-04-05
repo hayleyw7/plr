@@ -360,6 +360,11 @@ button,
   .aoc-logo {
     max-width: 200px;
   }
+
+  .wow-box {
+    padding-left: 12px;
+    gap: 10px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -403,6 +408,11 @@ button,
   #accomplishments h4 {
     font-size: 120%;
     padding-bottom: 5px;
+  }
+
+  .wow-box {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
