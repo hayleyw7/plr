@@ -50,14 +50,6 @@ body {
   z-index: 0;
 }
 
-
-
-/* .focus-items-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-} */
-
 .focus-item {
   display: flex;
   margin-bottom: 20px;
@@ -68,6 +60,7 @@ body {
 
 .focus-text {
   text-align: left;
+  padding-right: 30px;
 }
 
 .focus-item img {
@@ -87,7 +80,6 @@ body {
   display: inline-block;
   font-size: 18px;
 }
-
 
 #about,
 #accomplishments {
@@ -117,6 +109,44 @@ body {
   height: 500px;
 }
 
+.wow-box {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.accomplishments-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding-bottom: 3px;
+}
+
+.accomplishments-item > :first-child {
+  text-align: right !important;
+}
+
+.competition {
+  min-width: auto !important;
+  max-width: 50px !important;
+}
+
+.competition-wide {
+  min-width: 80px !important;
+  max-width: 80px !important;
+}
+
+.place {
+  min-width: 100px !important;
+  max-width: 100px !important;
+}
+
+.place-narrow {
+  min-width: 50px !important;
+  max-width: 50px !important;
+}
+
 .aoc-box,
 .wow-box {
   font-size: 18px;
@@ -127,6 +157,17 @@ body {
 #accomplishments h3,
 #accomplishments .paragraph {
   color: var(--white) !important;
+}
+
+#accomplishments .section-subheading,
+#about .p-long {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.aoc-topic {
+  padding-bottom: 4px;
+  display: inline-block;
 }
 
 .section-subheading {
@@ -317,10 +358,6 @@ button,
   .aoc-logo {
     max-width: 200px;
   }
-
-  #accomplishments .paragraph {
-    font-size: 90%;
-  }
 }
 
 @media (max-width: 800px) {
@@ -346,15 +383,60 @@ button,
     padding-right: 25px;
   }
 
+  .accomplishments-item {
+    display: block;
+    text-align: left;
+  }
+
+  .accomplishments-item > :first-child {
+    text-align: right;
+  }
+
+  .accomplishments-item {
+    display: block;
+    text-align: left;
+    padding: 5px;
+  }
+
+@media (max-width: 800px) {
+  .accomplishments-item {
+    text-align: center;
+  }
+
+  .white-box h3 {
+    max-width: 100% !important;
+    white-space: normal;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 108%;
+  }
+
+  .competition,
+  .competition-wide,
+  .place,
+  .place-narrow {
+    display: inline;
+  }
+
   #about,
   #accomplishments {
-    background-size: cover !important;
-    background-position: top center !important;
-    min-height: 400px;
+    width: auto;
+    min-width: 0;
+    max-width: none;
+    white-space: nowrap;
   }
 
   #accomplishments p.paragraph {
     font-size: 100% !important;
+  }
+
+  .wow-box {
+    flex-wrap: wrap;
+  }
+
+  .place-narrow {
+    min-width: 100px !important;
+    max-width: 100px !important;
   }
 
   .hero-subheading,
@@ -427,10 +509,6 @@ button,
     max-width: 80vw;
   }
 
-  .wow-box {
-    flex-wrap: wrap;
-  }
-
   .p-long {
     margin-left: 0;
     margin-right: 0;
@@ -453,5 +531,9 @@ button,
 
   .navigation-bar {
     padding-bottom: 10px;
+  }
+
+  #accomplishments .paragraph {
+    font-size: 90%;
   }
 }
