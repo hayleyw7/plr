@@ -155,7 +155,9 @@ body {
 }
 
 .aoc-box a,
-.focus-text a {
+.focus-text a,
+.aoc-box a img,
+.focus-text a img {
   background-color: transparent;
 }
 
