@@ -50,6 +50,45 @@ body {
   z-index: 0;
 }
 
+
+
+/* .focus-items-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+} */
+
+.focus-item {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px;
+  height: auto;
+  align-items: center;
+}
+
+.focus-text {
+  text-align: left;
+}
+
+.focus-item img {
+  width: 35px !important;
+  height: 35px !important;
+}
+
+#focus .focus-list {
+  color: var(--white);
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+#focus .focus-items {
+  text-align: left;
+  display: inline-block;
+  font-size: 18px;
+}
+
+
 #about,
 #accomplishments {
   position: relative;
@@ -229,21 +268,6 @@ button,
 #focus h2 {
   color: var(--white);
 }
-
-#focus .focus-list {
-  text-align: center;
-  color: var(--white);
-  padding-bottom: 40px;
-  display: flex;
-  justify-content: center;
-}
-
-#focus .focus-items {
-  text-align: left;
-  display: inline-block;
-  font-size: 18px;
-}
-
 
 /* accomplishments */
 

@@ -1,9 +1,3 @@
-// icons
-
-import { createIcons, icons } from 'https://unpkg.com/lucide@latest/dist/esm/lucide.js';
-
-createIcons({ icons });
-
 // navbar links
 
 // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -93,3 +87,15 @@ createIcons({ icons });
 //     if (rafId) cancelAnimationFrame(rafId);
 //   });
 // });
+
+// html snippets
+
+// other snippets to maybe add
+
+// Top-tier progression and world ranking.
+// Highly active community and fun atmosphere.
+// Commitment to unified guild objectives and goals.
+
+// If you're serious about PvP, PvE, and crafting, apply now.
+
+// Are you ready to leave your mark on the battlefield? POLAR is calling on elite gamers to join our ranks. Whether you crave the thrill of intense PVP or the challenge of conquering endgame PVE content, we’re the guild that thrives in both chaos and order.
