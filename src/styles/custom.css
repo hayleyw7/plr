@@ -60,7 +60,8 @@ body {
 
 .focus-text {
   text-align: left;
-  padding-right: 30px;
+  padding-right: 35px;
+  font-size: 18px;
 }
 
 .focus-item img {
@@ -149,7 +150,7 @@ body {
 
 .aoc-box,
 .wow-box {
-  font-size: 18px;
+  font-size: 18px !important;
 }
 
 #accomplishments h2,
@@ -413,6 +414,42 @@ button,
   .wow-box {
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  .focus-items {
+    padding-left: 5px;
+  }
+
+  .focus-text {
+    padding-right: 20px;
+  }
+
+  .focus-item img {
+    width: 40px !important;
+    height: 40px !important;
+    padding-right: 5px;
+  }
+
+  .hero-subheading {
+    font-size: 150%;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .hero-subheading span {
+    display: inline-block;
+  }
+
+  .hero-subheading span:first-child {
+    margin-bottom: 20px;
+  }
+
+  .white-box {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
