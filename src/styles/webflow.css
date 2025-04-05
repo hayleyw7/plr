@@ -34,6 +34,10 @@ body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
+  color: var(--white);
+  background-color: var(--dark-gray);
+  font-size: 16px;
+  line-height: 20px;
 }
 
 img {
@@ -1030,14 +1034,6 @@ button, [type="button"], [type="reset"] {
 .wf-layout-layout {
   display: grid;
 }
-
-body {
-  color: var(--dark-gray);
-  background-color: var(--white);
-  font-size: 16px;
-  line-height: 20px;
-}
-
 /* headings */
 
 h1 {
@@ -1194,14 +1190,14 @@ p {
 
 .white-box {
   text-align: center;
-  background-color: var(--light-gray);
-  border: 1px solid var(--light-gray);
+  background-color: var(--dark-gray);
+  border: 1px solid var(--dark-gray);
   border-radius: 10px;
   padding: 15px;
 }
 
 .white-box.transparent {
-  background-color: var(--white);
+  background-color: var(--dark-gra);
   border-style: none;
 }
 

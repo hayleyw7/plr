@@ -7,6 +7,7 @@ html, body {
 body {
   margin: 0;
   color: var(--dark-gray);
+  background-color: var(--dark-gray);
 }
 
 .banner-image {
@@ -33,23 +34,12 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/assets/backgrounds/bg-navy-frosty.png');
+  background: url('/assets/backgrounds/bg-navy-frosty-sm.png');
   background-size: cover;
   background-position: top center !important;
   background-repeat: no-repeat;
-  z-index: -1;
   background-attachment: fixed !important;
-}
-
-#focus::after,
-.top-section::after,
-.footer::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: var(--dark-gray);
-  opacity: 0.3;
-  mix-blend-mode: color;
+  opacity: 0.8;
   z-index: -1;
 }
 
@@ -63,10 +53,8 @@ body {
 #about,
 #accomplishments {
   position: relative;
-  background: url('/assets/backgrounds/bg-fantasy.png') no-repeat center bottom !important;
-  background-size: 250% !important;
   z-index: 0;
-  background-attachment: fixed !important;
+  background-color: var(--dark-gray);
 }
 
 #about::before,
@@ -74,17 +62,11 @@ body {
   content: '';
   position: absolute;
   inset: 0;
+  background: url('/assets/backgrounds/bg-fantasy.png') no-repeat center bottom;
+  background-size: 250%;
+  background-attachment: fixed;
+  opacity: 0.3;
   z-index: -1;
-}
-
-#about::before {
-  background-color: var(--dark-gray);
-  opacity: 0.85;
-}
-
-#accomplishments::before {
-  background-color: var(--dark-gray);
-  opacity: 0.5;
 }
 
 .white-box {
@@ -96,7 +78,9 @@ body {
 }
 
 #accomplishments h2,
-#accomplishments .section-subheading {
+#accomplishments .section-subheading,
+#accomplishments h3,
+#accomplishments .paragraph {
   color: var(--white) !important;
 }
 
@@ -260,10 +244,6 @@ button,
   min-width: 175px;
 }
 
-#accomplishments .paragraph {
-  color: var(--dark-gray) !important;
-}
-
 /* discord and twitch links */
 
 .nav-menu .navigation-link[href*="twitch"] {
@@ -274,6 +254,8 @@ button,
 .hero-button-container .hollow-button[href*="about"] {
   display: none;
 }
+
+/* responsive */
 
 @media (max-width: 991px) {
   #about,
