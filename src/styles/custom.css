@@ -120,7 +120,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: left;
-  padding-bottom: 3px;
+  padding-bottom: 4px;
 }
 
 .accomplishments-item > :first-child {
@@ -166,7 +166,7 @@ body {
 }
 
 .aoc-topic {
-  padding-bottom: 4px;
+  padding-bottom: 6px;
   display: inline-block;
 }
 
@@ -181,6 +181,8 @@ body {
 
 #accomplishments h4 {
   padding-top: 15px;
+  font-size: 120%;
+  padding-bottom: 5px;
 }
 
 #accomplishments .half-br {
@@ -397,6 +399,12 @@ button,
     text-align: left;
     padding: 5px;
   }
+
+  #accomplishments h4 {
+    font-size: 120%;
+    padding-bottom: 5px;
+  }
+}
 
 @media (max-width: 800px) {
   .accomplishments-item {
