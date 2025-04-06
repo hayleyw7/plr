@@ -10,6 +10,10 @@ body {
   background-color: var(--dark-gray);
 }
 
+.hero-section {
+  min-height: 93vh;
+}
+
 .banner-image {
   padding-top: 40px;
   width: 40%;
@@ -44,7 +48,7 @@ body {
   background-size: cover !important;
   background-position: top center !important;
   background-repeat: no-repeat;
-  background-attachment: fixed !important;
+  background-attachment: fixed;
   opacity: 0.8;
   z-index: -1;
 }
@@ -568,6 +572,14 @@ button,
 
   #about {
     padding-bottom: 60px !important;
+  }
+
+  #about::before,
+  #accomplishments::before,
+  #focus::before,
+  .top-section::before,
+  .footer::before {
+    background-attachment: scroll;
   }
 
   #about .section-title-group {
