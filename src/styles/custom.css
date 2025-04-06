@@ -10,14 +10,10 @@ body {
   background-color: var(--dark-gray);
 }
 
-.hero-section {
-  min-height: 93vh;
-}
-
 .banner-image {
   padding-top: 40px;
   width: 40%;
-  max-height: 70vh !important;
+  max-height: 75vh !important;
   max-width: 70vh !important;
 }
 
