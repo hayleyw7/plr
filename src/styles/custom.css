@@ -13,12 +13,18 @@ body {
 .banner-image {
   padding-top: 40px;
   width: 40%;
+  max-height: 70vh !important;
+  max-width: 70vh !important;
 }
 
 .p-long {
   text-align: left;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.section-heading {
+  font-weight: bold !important;
 }
 
 /* backgrounds */
@@ -270,6 +276,7 @@ button,
 
 .hero-subheading {
   font-weight: bold;
+  line-height: 1.5;
 }
 
 /* hero */
@@ -302,9 +309,8 @@ button,
   color: var(--light-gray) !important;
 }
 
-#about .section-subheading,
-#focus .section-subheading {
-  font-size: 20px;
+.section-subheading {
+  font-size: 18px !important;
 }
 
 #about .p-long {
@@ -462,7 +468,8 @@ button,
     margin-right: 30px;
   }
 
-  .hero-subheading span {
+  .hero-subheading span,
+  #focus .section-subheading span {
     display: inline-block;
   }
 
