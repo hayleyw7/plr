@@ -109,7 +109,6 @@ body {
 
 .white-box {
   background-color: rgba(74, 79, 92, 0.7); 
-  border: 1px solid var(--dark-gray);
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 35px;
