@@ -306,7 +306,11 @@ button,
   border: 1.5px solid white;
   height: 30px !important;
   width: 30px !important;
-  padding: 5px;
+  padding: 4px;
+}
+
+.nav-link .social-icon.twitch {
+  padding: 6px;
 }
 
 .footer-link .social-icon {
