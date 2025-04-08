@@ -112,8 +112,15 @@ body {
   background-color: rgba(74, 79, 92, 0.7); 
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 35px;
+}
+
+#accomplishments .white-box {
   height: 530px;
+  padding-bottom: 35px;
+}
+
+#about .white-box {
+  padding: 30px 35px 30px 35px;
 }
 
 .wow-box {
@@ -272,10 +279,47 @@ button,
   text-align: right;
 }
 
+.nav-link {
+  padding-top: 16px;
+}
+
 .brand-link.nav-brand {
   padding-left: 25px;
 }
 
+.icons {
+  padding-left: 10px;
+}
+
+.nav-link.icon {
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+.nav-link .social-icon,
+.footer-link .social-icon {
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.nav-link .social-icon {
+  border: 1px solid white;
+  height: 30px !important;
+  width: 30px !important;
+  padding: 5px;
+}
+
+.footer-link .social-icon {
+  height: 40px !important;
+  width: 40px !important;
+  border: 2px solid white;
+  padding: 5px;
+}
+
+.navigation-menu {
+  display: flex;
+  align-items: center;
+}
 
 /* headings */
 
@@ -379,8 +423,7 @@ button,
   display: inline-block;
 }
 
-.hero-button-container .hollow-button[href*="discord"],
-.hero-button-container .hollow-button[href*="about"] {
+.hollow-button {
   display: none;
 }
 
@@ -388,6 +431,10 @@ button,
 
 .footer-text {
   font-size: 18px !important;
+}
+
+.footer-link .social-icon {
+  display: none;
 }
 
 /* responsive */
@@ -407,15 +454,24 @@ button,
     padding-left: 12px;
     gap: 10px;
   }
-}
 
-@media (max-width: 800px) {
   .nav-menu .navigation-link[href*="twitch"] {
     display: none;
   }
 
-  .hero-button-container .hollow-button[href*="discord"],
-  .hero-button-container .hollow-button[href*="about"] {
+  #accomplishments .white-box h4 {
+    font-size: 110% !important;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .nav-link.icon {
+    margin: 0;
+  }
+
+  .hollow-button {
     display: inline-block;
     width: 245px;
     margin-bottom: 20px !important;
@@ -428,6 +484,10 @@ button,
     color: var(--white);
     background-color: var(--dark-gray) !important;
     font-weight: bold;
+  }
+
+  .nav-menu {
+    padding-bottom: 15px;
   }
 
   .navigation-bar {
@@ -486,12 +546,24 @@ button,
     margin-bottom: 20px;
   }
 
-  .white-box {
+  #accomplishments .paragraph.p-long.white-box {
     max-width: 100%;
     height: auto;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .footer-text {
+    line-height: 1;
+    margin: 0;
+  }
+
+  .footer-link .social-icon {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 15px;
+    display: inline-block;
   }
 }
 
@@ -500,12 +572,13 @@ button,
     text-align: center;
   }
 
-  .white-box h3 {
+  #accomplishments .white-box h3 {
     max-width: 100% !important;
     white-space: normal;
     text-align: center;
     margin: 0 auto;
-    font-size: 108%;
+    font-size: 120%;
+    padding-bottom: 5px;
   }
 
   .competition,
@@ -552,7 +625,7 @@ button,
     display: block;
   }
 
-  .white-box {
+  #accomplishments .white-box {
     max-width: 400px;
     height: auto;
   }
@@ -606,7 +679,7 @@ button,
     margin-bottom: 20px;
   }
 
-  .white-box {
+  #accomplishments .white-box {
     max-width: 80vw;
   }
 
@@ -617,6 +690,14 @@ button,
 
   #focus .p-long {
     text-align: left;
+  }
+
+  #accomplishments .white-box h3 {
+    font-size: 25px !important;
+  }
+
+  #about .white-box {
+    margin-bottom: 15px;
   }
 }
 
@@ -637,4 +718,12 @@ button,
   #accomplishments .paragraph {
     font-size: 90%;
   }
+}
+
+#accomplishments .white-box h4 {
+  font-weight: 100 !important;
+}
+
+#focus *:focus {
+  outline: none !important;
 }
