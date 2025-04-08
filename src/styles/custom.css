@@ -34,7 +34,7 @@ body {
   background: transparent !important;
 }
 
-#focus::before,
+#core::before,
 .top-section::before,
 .footer::before {
   content: '';
@@ -49,14 +49,14 @@ body {
   z-index: -1;
 }
 
-#focus,
+#core,
 .top-section,
 .footer {
   position: relative;
   z-index: 0;
 }
 
-.focus-item {
+.core-item {
   display: flex;
   margin-bottom: 20px;
   gap: 10px;
@@ -64,18 +64,18 @@ body {
   align-items: center;
 }
 
-.focus-text {
+.core-text {
   text-align: left;
   padding-right: 35px;
   font-size: 18px;
 }
 
-.focus-item img {
+.core-item img {
   width: 40px !important;
   height: 40px !important;
 }
 
-#focus .focus-list {
+#core .core-list {
   color: var(--white);
   padding-bottom: 40px;
   display: flex;
@@ -83,7 +83,7 @@ body {
   padding-left: 20px;
 }
 
-#focus .focus-items {
+#core .core-items {
   text-align: left;
   display: inline-block;
   font-size: 18px;
@@ -172,9 +172,9 @@ body {
 }
 
 .aoc-box a,
-.focus-text a,
+.core-text a,
 .aoc-box a img,
-.focus-text a img {
+.core-text a img {
   background-color: transparent;
 }
 
@@ -183,7 +183,7 @@ body {
   height: 22px;
 }
 
-.focus-text a img {
+.core-text a img {
   padding-bottom: 2px;
   height: 22px !important;
   width: 22px !important;
@@ -371,30 +371,30 @@ button,
   font-size: 20px;
 }
 
-/* focus */
+/* core */
 
-#focus {
+#core {
   padding-top: 50px !important;
   padding-bottom: 50px !important;
 }
 
-#focus {
+#core {
   background-color: var(--dark-gray);
 }
 
-#focus .section-heading {
+#core .section-heading {
   padding-top: 30px;
 }
 
-#focus .section-title-group {
+#core .section-title-group {
   margin-bottom: 45px;
 }
 
-#focus .section-subheading {
+#core .section-subheading {
   color: var(--light-gray) !important;
 }
 
-#focus h2 {
+#core h2 {
   color: var(--white);
 }
 
@@ -441,7 +441,7 @@ button,
 
 @media (max-width: 991px) {
   #about,
-  #focus {
+  #core {
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -519,15 +519,15 @@ button,
     padding-right: 40px;
   }
 
-  .focus-items {
+  .core-items {
     padding-left: 5px;
   }
 
-  .focus-text {
+  .core-text {
     padding-right: 20px;
   }
 
-  .focus-item img {
+  .core-item img {
     width: 40px !important;
     height: 40px !important;
     padding-right: 5px;
@@ -538,7 +538,7 @@ button,
   }
 
   .hero-subheading span,
-  #focus .section-subheading span {
+  #core .section-subheading span {
     display: inline-block;
   }
 
@@ -650,7 +650,7 @@ button,
 
   #about::before,
   #accomplishments::before,
-  #focus::before,
+  #core::before,
   .top-section::before,
   .footer::before {
     background-attachment: scroll;
@@ -662,11 +662,11 @@ button,
   }
 
   #about .section-heading,
-  #focus .section-heading {
+  #core .section-heading {
     font-size: 150% !important;
   }
 
-  #focus .section-subheading {
+  #core .section-subheading {
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -688,7 +688,7 @@ button,
     margin-right: 0;
   }
 
-  #focus .p-long {
+  #core .p-long {
     text-align: left;
   }
 
@@ -722,8 +722,4 @@ button,
 
 #accomplishments .white-box h4 {
   font-weight: 100 !important;
-}
-
-#focus *:focus {
-  outline: none !important;
 }
