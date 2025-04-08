@@ -303,7 +303,7 @@ button,
 }
 
 .nav-link .social-icon {
-  border: 1px solid white;
+  border: 1.5px solid white;
   height: 30px !important;
   width: 30px !important;
   padding: 5px;
@@ -417,6 +417,10 @@ button,
   min-width: 175px;
 }
 
+#accomplishments .white-box h4 {
+  font-weight: 100 !important;
+}
+
 /* discord and twitch links */
 
 .nav-menu .navigation-link[href*="twitch"] {
@@ -455,16 +459,8 @@ button,
     gap: 10px;
   }
 
-  .nav-menu .navigation-link[href*="twitch"] {
-    display: none;
-  }
-
   #accomplishments .white-box h4 {
     font-size: 110% !important;
-  }
-
-  .icons {
-    display: none;
   }
 
   .nav-link.icon {
@@ -475,19 +471,6 @@ button,
     display: inline-block;
     width: 245px;
     margin-bottom: 20px !important;
-  }
-
-  .nav-menu,
-  .nav-link {
-    background-color: transparent;
-    opacity: 0.95;
-    color: var(--white);
-    background-color: var(--dark-gray) !important;
-    font-weight: bold;
-  }
-
-  .nav-menu {
-    padding-bottom: 15px;
   }
 
   .navigation-bar {
@@ -568,6 +551,27 @@ button,
 }
 
 @media (max-width: 800px) {
+  .icons {
+    display: none;
+  }
+
+  .nav-menu .navigation-link[href*="twitch"] {
+    display: none;
+  }
+
+  .nav-menu,
+  .nav-link {
+    background-color: transparent;
+    opacity: 0.95;
+    color: var(--white);
+    background-color: var(--dark-gray) !important;
+    font-weight: bold;
+  }
+
+  .nav-menu {
+    padding-bottom: 15px;
+  }
+
   .accomplishments-item {
     text-align: center;
   }
@@ -718,8 +722,4 @@ button,
   #accomplishments .paragraph {
     font-size: 90%;
   }
-}
-
-#accomplishments .white-box h4 {
-  font-weight: 100 !important;
 }
