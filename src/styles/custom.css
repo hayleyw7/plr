@@ -417,10 +417,6 @@ button,
   min-width: 175px;
 }
 
-#accomplishments .white-box h4 {
-  font-weight: 100 !important;
-}
-
 /* discord and twitch links */
 
 .nav-menu .navigation-link[href*="twitch"] {
@@ -459,10 +455,6 @@ button,
     gap: 10px;
   }
 
-  #accomplishments .white-box h4 {
-    font-size: 110% !important;
-  }
-
   .nav-link.icon {
     margin: 0;
   }
@@ -475,11 +467,6 @@ button,
 
   .navigation-bar {
     padding-right: 25px;
-  }
-
-  .accomplishments-item {
-    display: block;
-    text-align: left;
   }
 
   .accomplishments-item > :first-child {
@@ -550,6 +537,16 @@ button,
   }
 }
 
+@media (min-width: 800px) and (max-width: 991px) {
+  .accomplishments-item {
+    display: flex;
+  }
+
+  .wow-box {
+    padding-left: 10px !important;
+  }
+}
+
 @media (max-width: 800px) {
   .icons {
     display: none;
@@ -581,7 +578,7 @@ button,
     white-space: normal;
     text-align: center;
     margin: 0 auto;
-    font-size: 120%;
+    font-size: 25px;
     padding-bottom: 5px;
   }
 
@@ -696,10 +693,6 @@ button,
     text-align: left;
   }
 
-  #accomplishments .white-box h3 {
-    font-size: 25px !important;
-  }
-
   #about .white-box {
     margin-bottom: 15px;
   }
@@ -722,4 +715,8 @@ button,
   #accomplishments .paragraph {
     font-size: 90%;
   }
+}
+
+#accomplishments .white-box h4 {
+  font-weight: 100 !important;
 }
