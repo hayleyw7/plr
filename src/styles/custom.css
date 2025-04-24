@@ -112,12 +112,12 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('/assets/backgrounds/bg-fantasy.avif') no-repeat center top;
+  background: url('/assets/backgrounds/bg-fantasy-ice.avif') no-repeat center top;
   background-size: cover;
   background-attachment: fixed;
-  opacity: 0.6;
+  /* opacity: 0.6; */
   z-index: -1;
-  filter: brightness(0.3);
+  /* filter: brightness(0.3); */
 }
 
 .white-box {
