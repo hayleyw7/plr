@@ -452,7 +452,7 @@ button, [type="button"], [type="reset"] {
 /* tablet - large */
 
 @media screen and (max-width: 939px) {
-  .container:not(#about .container) {
+  .container:not(#intro .container) {
     max-width: 728px;
   }
 
@@ -521,7 +521,7 @@ button, [type="button"], [type="reset"] {
 
 /* tablet - small */
 
-@media screen and (max-width: 727px) {
+@media screen and (max-width: 800px) {
   .hidden-main, .hidden-medium {
     display: inherit !important;
   }
@@ -767,7 +767,7 @@ button, [type="button"], [type="reset"] {
 
 /* tablet - small */
 
-@media screen and (max-width: 727px) {
+@media screen and (max-width: 800px) {
   .nav-brand {
     padding-left: 10px;
   }
@@ -896,7 +896,7 @@ button, [type="button"], [type="reset"] {
 
 /* tablet - small */
 
-@media screen and (max-width: 727px) {
+@media screen and (max-width: 800px) {
   .nav[data-collapse="small"] .nav-menu {
     display: none;
   }
@@ -1407,7 +1407,7 @@ p {
 
 /* tablet - small */
 
-@media screen and (max-width: 727px) {
+@media screen and (max-width: 800px) {
   .button.full-width {
     margin-left: auto;
     margin-right: auto;

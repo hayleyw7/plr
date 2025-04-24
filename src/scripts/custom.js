@@ -96,6 +96,6 @@
 // Highly active community and fun atmosphere.
 // Commitment to unified guild objectives and goals.
 
-// If you're serious about PvP, PvE, and crafting, apply now.
+// If you're serious intro PvP, PvE, and crafting, apply now.
 
 // Are you ready to leave your mark on the battlefield? POLAR is calling on elite gamers to join our ranks. Whether you crave the thrill of intense PVP or the challenge of conquering endgame PVE content, we’re the guild that thrives in both chaos and order.
