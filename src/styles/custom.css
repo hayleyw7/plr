@@ -741,6 +741,7 @@ button,
 
   #accomplishments .white-box {
     max-width: 80vw;
+    padding-top: 50px !important;
   }
 
   .p-long {
