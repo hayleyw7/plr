@@ -423,6 +423,10 @@ button,
   padding-bottom: 50px !important;
 }
 
+#core {
+  background-color: var(--dark-gray);
+}
+
 #core .section-heading {
   padding-top: 30px;
 }
