@@ -1,3 +1,8 @@
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+  20%, 22%, 24%, 55% { opacity: 0; }
+}
+
 /* general */
 
 html, body {
@@ -12,9 +17,9 @@ body {
 
 .banner-image {
   padding-top: 40px;
-  width: 40%;
+  width: 90%;
   max-height: 75vh !important;
-  max-width: 70vh !important;
+  max-width: 90vh !important;
 }
 
 .p-long {
@@ -25,6 +30,11 @@ body {
 
 .section-heading {
   font-weight: bold !important;
+}
+
+.yt-icon:hover {
+  animation: flicker 0.8s linear infinite !important;
+  filter: var(--red-glow) !important;
 }
 
 /* backgrounds */
@@ -40,12 +50,12 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('/assets/backgrounds/bg-navy-frosty-sm.avif');
+  background: url('/assets/backgrounds/bg-gray-frosty-sm.avif');
   background-size: cover !important;
   background-position: top center !important;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  opacity: 0.8;
+  opacity: 0.5;
   z-index: -1;
 }
 
@@ -93,7 +103,8 @@ body {
 #accomplishments {
   position: relative;
   z-index: 0;
-  background-color: var(--dark-gray);
+  /* background-color: var(--red); */
+  background-color: #57c5eb;
 }
 
 #about::before,
@@ -104,19 +115,26 @@ body {
   background: url('/assets/backgrounds/bg-fantasy.avif') no-repeat center top;
   background-size: cover;
   background-attachment: fixed;
-  opacity: 0.3;
+  opacity: 0.6;
   z-index: -1;
+  filter: brightness(0.3);
 }
 
 .white-box {
-  background-color: rgba(74, 79, 92, 0.7); 
+  background-color: rgba(0, 0, 0, 0.6);
   margin-left: auto;
   margin-right: auto;
 }
 
 #accomplishments .white-box {
-  height: 530px;
+  height: 340px;
   padding-bottom: 35px;
+  padding-top: 25px;
+}
+
+#about {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #about .white-box {
@@ -279,8 +297,17 @@ button,
   text-align: right;
 }
 
+.nav-logo {
+  height: 26px;
+}
+
 .nav-link {
   padding-top: 16px;
+}
+
+.nav-link.word:hover {
+  filter: var(--blue-glow);
+  animation: flicker 0.8s linear infinite;
 }
 
 .brand-link.nav-brand {
@@ -300,6 +327,12 @@ button,
 .footer-link .social-icon {
   border-radius: 50%;
   background-color: transparent;
+}
+
+.nav-link .social-icon:hover,
+.footer-link .social-icon:hover {
+  filter: var(--red-glow);
+  animation: flicker 0.8s linear infinite;
 }
 
 .nav-link .social-icon {
@@ -375,6 +408,18 @@ button,
   font-size: 20px;
 }
 
+.typewriter::after {
+  content: '|';
+  animation: blink-cursor 1s step-end infinite;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
+
 /* core */
 
 #core {
@@ -399,7 +444,7 @@ button,
 }
 
 #core h2 {
-  color: var(--white);
+  color: var(--red);
 }
 
 /* accomplishments */
@@ -429,6 +474,11 @@ button,
 
 .hollow-button {
   display: none;
+}
+
+.hollow-button:hover {
+  filter: var(--blue-glow);
+  animation: flicker 0.8s linear infinite;
 }
 
 /* footer */
@@ -497,14 +547,14 @@ button,
     padding-left: 5px;
   }
 
-  .core-text {
-    padding-right: 20px;
-  }
-
   .core-item img {
     width: 40px !important;
     height: 40px !important;
     padding-right: 5px;
+  }
+
+  .core-text {
+    padding-right: 20px;
   }
 
   .hero-subheading {
@@ -527,6 +577,10 @@ button,
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  #accomplishments .white-box {
+    height: 375px;
+  }
 }
 
 @media (min-width: 800px) and (max-width: 991px) {
@@ -543,7 +597,6 @@ button,
   .icons {
     display: none;
   }
-
 
   .footer-text {
     line-height: 1;
@@ -643,7 +696,7 @@ button,
   }
 
   .banner-image {
-    width: 75%;
+    width: 90%;
   }
 
   iframe {

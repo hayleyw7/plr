@@ -3,17 +3,25 @@
 :root {
   --black: #000;
   --white: #fcfeff;
+  --red: #e7191e;
   /* --dark-gray: #680070; */
   /* --dark-gray: #444443; */
   /* --dark-gray: #3c3c3c; */
   /* --dark-gray: #5a6062; */
-  --dark-gray: #595f6d;
+  /* --dark-gray: #595f6d; */
+  --dark-gray: #000;
   /* --dark-gray: #4a4f5c; */
   --gray: #b2b6bc;
+  --gray: #000;
   --light-gray: #dbe1e5;
-  --turquoise: #57c5eb;
-  --light-turquoise: #a9dff3;
-  --blue: #1e3374;
+  /* --turquoise: #57c5eb; */
+  --turquoise: #e7191e;
+  /* --light-turquoise: #a9dff3; */
+  --light-turquoise: #e7191e;
+  /* --blue: #1e3374; */
+  --blue: #000;
+  --red-glow: drop-shadow(0 0 4px var(--red)) drop-shadow(0 0 8px var(--red)) drop-shadow(0 0 12px var(--red));
+  --blue-glow: drop-shadow(0 0 4px #57c5eb) drop-shadow(0 0 8px #57c5eb) drop-shadow(0 0 12px #57c5eb);
 }
 
 @font-face {
@@ -831,10 +839,6 @@ button, [type="button"], [type="reset"] {
   position: relative;
 }
 
-.nav-link.-current {
-  color: var(--turquoise);
-}
-
 .nav-menu {
   float: right;
   position: relative;
@@ -1134,14 +1138,6 @@ p {
   margin-right: 8px;
 }
 
-.button.tab:hover {
-  background-color: var(--turquoise);
-}
-
-.button.tab.-current {
-  background-color: var(--dark-gray);
-}
-
 /* nav */
 
 .navigation-link {
@@ -1193,11 +1189,6 @@ p {
   text-align: center;
   border-radius: 10px;
   padding: 15px;
-}
-
-.white-box.transparent {
-  background-color: var(--dark-gray);
-  border-style: none;
 }
 
 /* hero */
@@ -1254,11 +1245,6 @@ p {
   transition: background-color .3s, border .3s, color .3s;
   display: inline-block;
   background-color: transparent;
-}
-
-.hollow-button:hover {
-  color: var(--light-turquoise);
-  border-color: var(--light-turquoise);
 }
 
 .hollow-button.all-caps {
