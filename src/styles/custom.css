@@ -112,7 +112,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('/assets/backgrounds/bg-fantasy-ice.avif') no-repeat center top;
+  background: url('/assets/backgrounds/bg-fantasy-ice-3.avif') no-repeat center top;
   background-size: cover;
   background-attachment: fixed;
   /* opacity: 0.6; */
