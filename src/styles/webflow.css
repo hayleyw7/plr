@@ -59,11 +59,6 @@ article, aside, details, footer, header, hgroup, main, menu, nav, section, summa
   display: block;
 }
 
-audio, canvas, progress, video {
-  vertical-align: baseline;
-  display: inline-block;
-}
-
 audio:not([controls]) {
   height: 0;
   display: none;
@@ -341,31 +336,6 @@ html[data-dynpage] [data-cloak] {
   list-style: none;
 }
 
-.embed:before, .embed:after {
-  content: " ";
-  grid-area: 1 / 1 / 2 / 2;
-  display: table;
-}
-
-.embed:after {
-  clear: both;
-}
-
-.video {
-  width: 100%;
-  padding: 0;
-  position: relative;
-}
-
-.video iframe, .video object, .video embed {
-  border: none;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 fieldset {
   border: 0;
   margin: 0;
@@ -483,8 +453,8 @@ button, [type="button"], [type="reset"] {
 
 /* tablet - large */
 
-@media screen and (max-width: 991px) {
-  .container {
+@media screen and (max-width: 939px) {
+  .container:not(#about .container) {
     max-width: 728px;
   }
 
@@ -553,7 +523,7 @@ button, [type="button"], [type="reset"] {
 
 /* tablet - small */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 727px) {
   .hidden-main, .hidden-medium {
     display: inherit !important;
   }
@@ -784,7 +754,7 @@ button, [type="button"], [type="reset"] {
 }
 
 .dropdown-link {
-  color: var(--white)
+  color: var(--white);
   padding: 10px 20px;
   display: block;
 }
@@ -799,7 +769,7 @@ button, [type="button"], [type="reset"] {
 
 /* tablet - small */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 727px) {
   .nav-brand {
     padding-left: 10px;
   }
@@ -928,7 +898,7 @@ button, [type="button"], [type="reset"] {
 
 /* tablet - small */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 727px) {
   .nav[data-collapse="small"] .nav-menu {
     display: none;
   }
@@ -1402,7 +1372,7 @@ p {
 
 /* tablet -  large */
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 939px) {
   .navigation-link {
     color: var(--white);
   }
@@ -1440,7 +1410,7 @@ p {
 
 /* tablet - small */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 727px) {
   .button.full-width {
     margin-left: auto;
     margin-right: auto;
