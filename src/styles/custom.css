@@ -610,6 +610,11 @@ button,
     display: none;
   }
 
+  .nav-link.word:hover {
+    filter: none;
+    animation: none;
+  }
+
   .nav-menu,
   .nav-link {
     background-color: transparent;
