@@ -380,6 +380,7 @@ button,
 .hero-subheading {
   font-weight: bold;
   line-height: 1.5;
+  margin-bottom: 60px;
 }
 
 /* hero */
@@ -577,6 +578,14 @@ button,
     display: inline-block;
   }
 
+  /* .hide-mobile {
+    display: none !important;
+  } */
+
+  .section-title-group {
+    margin-bottom: 35px;
+  }
+
   .hero-subheading span:first-child {
     margin-bottom: 20px;
   }
@@ -766,6 +775,15 @@ button,
   #core .section-subheading {
     margin-left: 15px;
     margin-right: 15px;
+  }
+
+  .hero-subheading {
+    margin-bottom: 0 !important;
+  }
+
+  #core .section-heading {
+    padding-top: 15px !important;
+    font-size: 175% !important;
   }
 
   .hero-subheading span {
