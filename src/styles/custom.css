@@ -11,8 +11,8 @@ html, body {
 
 body {
   margin: 0;
-  color: var(--dark-gray);
-  background-color: var(--dark-gray);
+  color: var(--black);
+  background-color: var(--black);
 }
 
 .banner-image {
@@ -439,7 +439,7 @@ button,
 }
 
 #core {
-  background-color: var(--dark-gray);
+  background-color: var(--black);
 }
 
 #core .section-heading {
@@ -652,7 +652,7 @@ button,
     background-color: transparent;
     opacity: 0.95;
     color: var(--white);
-    background-color: var(--dark-gray) !important;
+    background-color: var(--black) !important;
     font-weight: bold;
   }
 
