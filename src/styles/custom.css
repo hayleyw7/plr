@@ -18,8 +18,9 @@ body {
 .banner-image {
   padding-top: 40px;
   width: 90%;
-  max-height: 75vh !important;
-  max-width: 90vh !important;
+  max-height: auto !important;
+  /* max-width: 90vh !important; */
+  max-width: 500px !important;
   padding-right: 10px;
 }
 
@@ -208,9 +209,13 @@ body {
 
 #victories h2,
 #victories .section-subheading,
-#victories h3,
+/* #victories h3, */
 #victories .paragraph {
   color: var(--white) !important;
+}
+
+#victories h3 {
+  color: var(--red) !important;
 }
 
 #victories .section-subheading,
@@ -513,6 +518,10 @@ button,
   display: none;
 }
 
+.c {
+  color: var(--red);
+}
+
 /* responsive */
 
 @media (max-width: 939px) {
@@ -664,6 +673,10 @@ button,
     margin-right: 5px;
     margin-top: 15px;
     display: inline-block;
+  }
+
+  .c {
+    color: var(--white);
   }
 
   .nav-menu .navigation-link[href*="twitch"] {
