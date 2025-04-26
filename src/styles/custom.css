@@ -805,7 +805,8 @@ button,
   #core::before,
   .top-section::before,
   .footer::before {
-    background-attachment: scroll;
+    background-attachment: scroll !important;
+    background-position: center top;
   }
 
   #intro .section-title-group {
