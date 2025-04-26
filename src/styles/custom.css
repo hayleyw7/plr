@@ -684,6 +684,10 @@ button,
     display: none;
   }
 
+  .nav-logo {
+    visibility: hidden;
+  }
+
   .nav-link.word {
     padding-right: 23px;
   }
@@ -782,10 +786,6 @@ button,
 @media (max-width: 500px) {
   .navigation-menu {
     padding-bottom: 80px !important;
-  }
-
-  .nav-logo {
-    visibility: hidden;
   }
 
   .hero-section {
